@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthService from './service/auth_service';
-import firebaseApp from './service/firebase';
+import {firebaseApp} from './service/firebase';
 import ImageUploader from './service/image_uploader';
 import ImageFileInput from './components/image_file_input/image_file_input';
 import CardRepository from './service/card_repository';

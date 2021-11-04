@@ -43,7 +43,7 @@ const Maker = ({authService, FileInput, cardRepository}) => {
         history.push('/');
       }
     });
-  });
+  }, [authService, history]);
 
   useEffect(() => {
     if (!userId) return;

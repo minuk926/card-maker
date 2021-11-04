@@ -11,7 +11,6 @@ const CardEditForm = ({card, updateCard, removeCard, FileInput}) => {
   const messageRef = useRef(null);
 
   const onChange = (e) => {
-    console.log(e);
     if (e.currentTarget === null) return;
     e.preventDefault();
     updateCard({
