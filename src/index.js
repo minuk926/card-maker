@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -13,7 +13,7 @@ const authService = new AuthService(firebaseApp);
 const cardRepository = new CardRepository();
 const imageUploader = new ImageUploader();
 // name={name} onFileChange={onFileChange}
-const FileInput = (props) => <ImageFileInput {...props} imageUploader={imageUploader} />;
+const FileInput = memo((props) => <ImageFileInput {...props} imageUploader={imageUploader} />);
 
 ReactDOM.render(
   <React.StrictMode>

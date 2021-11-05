@@ -3,13 +3,14 @@
 .button {
   background-color: makerGreen;
   color: makerWhite;
-  font-weight: bold;
+  font: {
+    weight: bold;
+    size: 0.8em;
+  }
   cursor: pointer;
   padding: 0.5em;
   flex: 1 1 50%;
-  font-size: 0.8em;
-}
-
-.button:hover {
-  opacity: 0.8;
+  &:hover {
+     opacity: 0.8;
+   }
 }
